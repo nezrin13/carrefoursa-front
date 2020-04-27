@@ -94,4 +94,8 @@ $spritesheet: (256px, 128px, 'C:\Users\nezri\OneDrive\Desktop\front%20project\sr
 @mixin sprites($sprites) {
   @each $sprite in $sprites {
     $sprite-name: nth($sprite, 10);
-    .#{$sprit
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
