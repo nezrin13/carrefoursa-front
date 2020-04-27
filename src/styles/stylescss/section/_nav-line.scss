@@ -1,0 +1,28 @@
+.first-menu-toggle,.nav-company-button {
+    display: block;
+    transition: $tr;
+    &.nav-active {
+        display: none !important;
+    }
+}
+#nav-line {
+    width: 100%;
+    background-color: $blue;
+    height: 52px;
+    z-index: 99;
+
+    .place-order {
+        display: block;
+        padding: 16px 0;
+        color: #fff;
+        font-size: 13px;
+        transition: $tr;
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+    @media(max-width: 991.9px){
+        display: none;
+    }
+}

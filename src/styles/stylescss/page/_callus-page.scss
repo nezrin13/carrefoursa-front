@@ -1,0 +1,159 @@
+#call-us-page-section {
+    background-color: #f1f1f1;
+
+    .nav {
+
+        .first-menu-toggle,
+        .nav-company-button {
+            visibility: hidden;
+            opacity: 0;
+            transition: $tr;
+            display: none !important;
+
+            &.nav-active {
+                visibility: visible;
+                opacity: 1;
+                display: block !important;
+            }
+        }
+    }
+
+    .call-us-content {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        background-color: #FFF;
+
+        h2 {
+            font-size: 36px;
+            color: $blue;
+            margin-bottom: 20px;
+
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .call-us-contact {
+            border: 1px solid #E5E5E5;
+            border-radius: 10px;
+            text-align: center;
+            padding: 18px 12px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            i {
+                font-size: 35px;
+                color: $blue;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 2px;
+            }
+
+            span {
+                font-size: 13px;
+                color: #666;
+            }
+
+            a {
+                color: $blue;
+                font-size: 12px;
+            }
+        }
+
+        .contact-form {
+            display: flex;
+            width: 100%;
+            border: 1px solid #E5E5E5;
+            border-radius: 10px;
+            padding: 18px 12px;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            h5 {
+                color: $blue;
+                margin-bottom: 18px;
+            }
+
+            form {
+                width: 70%;
+                padding: 10px;
+                background-color: #f1f1f1;
+                margin: 0;
+                border: 1px solid #E5E5E5;
+
+                .new-notification {
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 5px;
+                    color: red;
+                    border: 1px solid #ddd;
+                    border-top: 1px solid red;
+                    border-radius: 5px;
+                    text-align: start;
+                    font-weight: 500;
+                    margin: 5px 0;
+                    font-size: 14px;
+                }
+
+                label {
+                    width: 100%;
+                    position: relative;
+
+                    input {
+                        border: 1px solid #DDD;
+                        padding: 5px 10px;
+                        margin: 5px 0;
+                        width: 100%;
+                        border-radius: 5px;
+                        font-size: 14px;
+                    }
+
+                    span {
+                        position: absolute;
+                        left: -7px;
+                        top: 13px;
+                        background: #fff;
+                        font-size: 10px;
+                        padding: 0 3px;
+                        border-radius: 50%;
+                        color: #999;
+                        border: 1px solid #ccc;
+                    }
+                }
+
+                textarea {
+                    border: 1px solid #DDD;
+                    padding: 5px 10px;
+                    margin: 5px 0;
+                    width: 100%;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+
+                .robot{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    button{
+                        width: fit-content;
+                        padding: 7px 15px;
+                        font-size: 14px;
+                        transition: $tr;
+                    }
+                }
+                @media (max-width: 991.9px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

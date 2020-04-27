@@ -1,0 +1,103 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    {{> common/head }}
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+    <a id="backTop" title="Back to top" href="#"><i class="fas fa-angle-up"></i></a>
+    {{> pop-up/signin-popup }}
+    {{> pop-up/forgotten-password-popup }}
+    {{> pop-up/filter-popup }}
+    {{> pop-up/register-popup }}
+
+
+    {{> common/header }}
+
+    <section id="invoice-page-section">
+        {{> section/nav-line}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol>
+                        <li> <a href="">
+                                Ana Sayfa
+                            </a></li>
+                        <li>
+                            <a href="">
+                                / Fatura Bulucu
+                            </a>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="invoice-content">
+                        <h3>
+                            Fatura Bulucu
+                        </h3>
+                        <p>
+                            Değerli müşterilerimiz fatura bulucu sayfasındaki alanları dolduradak hem
+                            www.carrefoursa.com’dan yaptığınız alışverişlerin hem de mağazalardan yapmış olduğunuz
+                            alışverin e-arşiv faturasına ulaşabilirsiniz.
+                            <br>
+                        </p>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <span>
+                                        Sipariş no / Bilgi fişi barkod no:
+                                    </span>
+                                    <input type="text">
+                                </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>www.carrefoursa.com’dan yapmış olduğunuz alışverişe ait e-arşiv faturasına ulaşmak
+                                    için fişinizde yer alan barkod numarası veya onay mailinizde yer alan sipariş
+                                    numaranızı yazmanız gerekmektedir.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <form>
+                                    <span>
+                                        Teslim Edilen Sipariş Tutarı / Toplam Fiş Tutarı : <b>(Örn: 1,00 TL, 123,00 TL,
+                                            1.234,50 TL)</b>
+
+                                    </span>
+                                    <input type="text">
+                                </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>www.carrefoursa.com’dan yapmış olduğunuz alışverişe ait e-arşiv faturasına ulaşmak
+                                    için siparişinizin teslim edilen tutarını (net ödeme yaptığınız tutar) girmeniz
+                                    gerekmektedir. <br>
+                                    Mağazadan yapmış olduğunuz alışverişe ait e-arşiv faturasına ulaşmak için mağazada
+                                    size verilen bilgi fişi üzerindeki tutarı yazmanız gerekmektedir.</p>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                                <button type="button" class="product-basket ">Ara</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    {{> common/footer }}
+
+</body>
+
+</html>

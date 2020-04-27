@@ -1,0 +1,48 @@
+#contact-page-section{
+    background-color: #f1f1f1;
+    .nav {
+        .first-menu-toggle,
+        .nav-company-button {
+            visibility: hidden;
+            opacity: 0;
+            transition: $tr;
+            display: none !important;
+
+            &.nav-active {
+                visibility: visible;
+                opacity: 1;
+                display: block !important;
+            }
+        }
+    }
+    .contact-contect{
+        padding: 30px;
+        background-color: #fff;
+        margin-bottom: 40px;
+
+        h2{
+            color: #015aac;
+            font-size: 35px;
+            margin-bottom: 20px;
+
+            @media (max-width:991.9px){
+                font-size: 25px;
+            }
+        }
+        
+        p{
+            font-size: 14px;
+        }
+        iframe{
+            @media (max-width:767.9px){
+                height: 200px;
+            }
+        }
+        @media (max-width:991.9px){
+            padding: 20px;
+        }
+        @media (max-width:767.9px){
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,340 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    .popup-layer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.421);
+        width: 100%;
+        height: 100%;
+    }
+
+    .popup-content {
+
+        background-color: white;
+        z-index: 101;
+        border-radius: 5px;
+
+        .popup-head {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: $blue 1px solid;
+            color: $blue;
+
+            .close {
+                color: $blue;
+            }
+
+            h4{
+                @media (max-width:991.9px){
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .popup-body {
+            padding: 10px;
+
+            form {
+                margin: 0;
+                font-size: 14px;
+
+                p {
+                    font-size: 14px;
+                }
+
+                // span {
+                //     color: red;
+                // }
+
+                .popup-input-text {
+                    width: 100%;
+                    border: 1px $blue solid;
+                    font-size: 13px;
+                    padding: 5px 8px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    &.active {
+        display: flex;
+    }
+}
+
+// filter
+#popup-filter {
+    .popup {
+        .popup-content {
+
+            .popup-body {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+
+                        input {
+                            margin-right: 5px;
+                        }
+
+                        p {
+                            margin: 0;
+                            padding-bottom: 2px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//  signin
+
+#signin-content {
+
+    h4 {
+        color: #fff;
+        font-size: 30px;
+        // margin-bottom: 20px;
+
+        @media (max-width: 991.9px) {
+            font-size: 25px;
+        }
+    }
+    i{
+        color: #fff;
+    }
+    .popup-content {
+        width: 100%;
+        @media (min-width: 767.9px) {
+            min-width: 350px !important;
+
+        }
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .popup-head{
+        background-color: $blue;
+        color: #fff;
+    }
+    
+    form {
+        label {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            p {
+                font-size: 12px;
+                color: gray;
+                margin: 0;
+            }
+
+            span {
+                font-size: 16px;
+                color: $gray;
+                font-weight: 600;
+                margin-right: 10px;
+
+                @media (max-width: 767.9px) {
+                    font-size: 14px;
+                }
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid $blue;
+                margin-top: 10px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                position: relative;
+                color: $gray;
+                font-size: 14px;
+
+                &#password-field {
+                    padding-right: 40px;
+                }
+            }
+
+            .toggle-password {
+                position: absolute;
+                bottom: 8px;
+                right: 5px;
+            }
+
+            &.label-checkbox {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                position: static;
+
+                input {
+                    margin: 0 10px 0 0;
+                    width: fit-content;
+                }
+            }
+        }
+
+        .forgotten-password {
+            background-color: transparent;
+            color: $blue;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin: 9px 0;
+        }
+
+        .social-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+           button{
+               padding: 7px;
+               span{
+                   font-size: 12px;
+               }
+           }
+            @media(max-width:767.9px) {
+                flex-wrap: wrap;
+
+                .google {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// register
+#register-content {
+   
+    h4 {
+        color: #fff;
+        font-size: 30px;
+        // margin-bottom: 20px;
+
+        @media (max-width: 991.9px) {
+            font-size: 25px;
+        }
+    }
+    i{
+        color: #fff;
+    }
+    .popup-content {
+        width: 100%;
+        @media (min-width: 767.9px) {
+            min-width: 350px !important;
+
+        }
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .popup-head{
+        background-color: $blue;
+        color: #fff;
+    }
+    form {
+        label {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            p {
+                font-size: 12px;
+                color: gray;
+                margin: 0;
+            }
+
+            span {
+                font-size: 16px;
+                color: $gray;
+                font-weight: 600;
+                margin-right: 10px;
+
+                @media (max-width: 767.9px) {
+                    font-size: 14px;
+                }
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid $blue;
+                margin-top: 10px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                position: relative;
+                color: $gray;
+                font-size: 14px;
+
+                &#password-field {
+                    padding-right: 40px;
+                }
+            }
+
+            .toggle-password {
+                position: absolute;
+                bottom: 8px;
+                right: 5px;
+            }
+
+            &.label-checkbox {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                position: static;
+
+                input {
+                    margin: 0 10px 0 0;
+                    width: fit-content;
+                }
+            }
+        }
+
+        .social-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button{
+                padding: 7px;
+                span{
+                    font-size: 12px;
+                }
+            }
+            @media(max-width:767.9px) {
+                flex-wrap: wrap;
+
+                .google {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

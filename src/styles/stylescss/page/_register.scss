@@ -1,0 +1,125 @@
+#register-section {
+    background-color: #f1f1f1;
+    // padding: 30px 0;
+
+    .nav {
+
+        .first-menu-toggle,
+        .nav-company-button {
+            visibility: hidden;
+            opacity: 0;
+            transition: $tr;
+            display: none !important;
+
+            &.nav-active {
+                visibility: visible;
+                opacity: 1;
+                display: block !important;
+            }
+        }
+    }
+
+
+    .register-content {
+        background-color: #fff;
+        padding: 30px;
+        margin: 20px 0;
+        border-radius: 3px;
+        h4 {
+            color: $blue;
+            font-size: 30px;
+            margin-bottom: 20px;
+
+            @media (max-width: 991.9px) {
+                font-size: 25px;
+            }
+        }
+
+        form {
+            label {
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                p {
+                    font-size: 12px;
+                    color: gray;
+                    margin: 0;
+                }
+
+                span {
+                    font-size: 16px;
+                    color: $gray;
+                    font-weight: 600;
+                    margin-right: 10px;
+
+                    @media (max-width: 767.9px) {
+                        font-size: 14px;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    border: 1px solid $blue;
+                    margin-top: 10px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    position: relative;
+                    color: $gray;
+                    font-size: 14px;
+
+                    &#password-field {
+                        padding-right: 40px;
+                    }
+                }
+
+                .toggle-password {
+                    position: absolute;
+                    bottom: 8px;
+                    right: 5px;
+                }
+
+                &.label-checkbox {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    position: static;
+
+                    input {
+                        margin: 0 10px 0 0;
+                        width: fit-content;
+                    }
+                }
+            }
+
+            .register-button {
+                display: flex;
+                justify-content: flex-end;
+                .product-basket {
+                    width: fit-content;
+                    padding: 10px 20px;
+                    margin-bottom: 10px;
+                    @media (max-width: 767.9px){
+                        width: 100%;
+                    }
+                }
+            }
+
+            .social-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media(max-width:767.9px) {
+                    flex-wrap: wrap;
+
+                    .google {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

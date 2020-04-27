@@ -1,0 +1,147 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    {{> common/head }}
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+    <a id="backTop" title="Back to top" href="#"><i class="fas fa-angle-up"></i></a>
+    {{> pop-up/signin-popup }}
+    {{> pop-up/forgotten-password-popup }}
+    {{> pop-up/filter-popup }}
+    {{> pop-up/register-popup }}
+    {{> common/header }}
+
+    <section id="call-us-page-section">
+        {{> section/nav-line}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol>
+                        <li> <a href="">
+                                Ana Sayfa
+                            </a></li>
+                        <li>
+                            <a href="">
+                                / Sepetim
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-12">
+                    <div class="call-us-content">
+                        <h2>
+                            Sizi Dinliyoruz
+                        </h2>
+                        <p>
+                            <b> Şikayet Politikamız:</b> Siz müşterilerimiz tarafından farklı iletişim kanallarından
+                            gelen bildirimleri etkili ve verimli bir şekilde, yasa ve şirket kuralları dahilinde
+                            değerlendirip, gerekli kaynakları sağlayarak, müşterilerimize değer yaratan ürün ve
+                            hizmetlerle, süreçlerimizi sürekli iyileştirmektir. <br> <br>
+
+                            Bildirimlerinizi aşağıdaki iletişim kanallarını kullanarak bizimle paylaşabilir, dilerseniz
+                            aşağıda bulunan iletişim formunu da doldurabilirsiniz. Bildirimlerinize ortalama iki iş günü
+                            içerisinde cevap dönülecektir. <br>
+                            Müşteri şikâyetleri ve çözüme ilişkin bilgilendirme süreci CarrefourSA Genel Müdürü Kutay
+                            Kartallıoğlu ve CarrefourSA Üst Yönetimi tarafından bizzat takip edilmektedir.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="call-us-contact">
+                                    <i class="fas fa-phone-volume"></i>
+                                    <p>Çağrı Merkezi</p>
+                                    <p><b>444 10 00</b></p>
+                                    <span>08:00 – 24:00 saatleri arasında hizmet vermektedir</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="call-us-contact">
+                                    <i class="far fa-envelope"></i>
+                                    <p>Kurumsal e-posta</p>
+                                    <a href="">bilgi@carrefoursa.com</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="call-us-contact">
+                                    <i class="far fa-user"></i>
+                                    <p>Genel Müdür e-posta</p>
+                                    <a href="">kutaykartallioglu@carrefoursa.com</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="call-us-contact">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>Mektup Adresi</p>
+                                    <span>
+                                        CarrefourSA Plaza Cevizli Mahallesi Tugay Yolu Caddesi No:67 Blok: B 34846
+                                        Maltepe İstanbul
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="contact-form">
+                                    <h5>
+                                        İletişim Formu
+                                    </h5>
+                                    <form>
+                                        <div class="new-notification">
+                                            Yeni Bildirim
+                                        </div>
+                                        <label for="">
+                                            <input type="text" placeholder="Adınız Soyadınız">
+                                            <span>
+                                                ✱
+                                            </span>
+                                        </label>
+                                        <label for="">
+                                            <input type="text" placeholder="e-Posta Adresiniz">
+                                            <span>
+                                                ✱
+                                            </span>
+                                        </label>
+                                        <label for="">
+                                            <input type="text" placeholder="CarrefourSA Kart No">
+                                        </label>
+                                        <label for="">
+                                            <input type="text" placeholder="# Cep Telefonu">
+                                            <span>
+                                                ✱
+                                            </span>
+                                        </label>
+                                        <textarea placeholder="Adınız Soyadınız">
+                                        </textarea>
+
+                                        <div class="robot">
+
+                                            <div>
+                                                {{!-- i am not robot --}}
+                                            </div>
+
+                                            <button type="button" class="product-basket">Kaydet</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    {{> common/footer }}
+
+</body>
+
+</html>

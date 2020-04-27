@@ -1,0 +1,110 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    {{> common/head }}
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+    <a id="backTop" title="Back to top" href="#"><i class="fas fa-angle-up"></i></a>
+    {{> pop-up/signin-popup }}
+    {{> pop-up/forgotten-password-popup }}
+    {{> pop-up/register-popup }}
+    {{> pop-up/filter-popup }}
+
+    {{> common/header }}
+
+    <section id="product-category-page-section">
+        {{> section/nav-line}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol>
+                        <li> <a href="">
+                                Ana Sayfa
+                            </a></li>
+                        <li>
+                            <a href="">
+                                / Meyve,Sebze
+                            </a>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-page-left">
+                        <div class="product-page-left-line">
+                            <h5>Meyve, Sebze</h5>
+                            <p>146 ürün bulundu</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="product-page-left-line">
+                            <a href="">Meyve</a>
+                            <a href="">Sebze</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="product-page-right">
+                        <select>
+                            <option>Akıllı Sıralama</option>
+                            <option>Çok Satanlar</option>
+                            <option>En Yüksek Fiyat</option>
+                            <option>En Düşük Fiyat</option>
+
+                        </select>
+
+                        <div class="product-piece">
+                            146
+                        </div>
+                        <button type="button" class="product-filter popup-filter-open">
+                            <i class="fas fa-sort-amount-up-alt"></i>
+                        </button>
+
+                    </div>
+                    <div class="product-page-right-item">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                {{> section-inner/product-item}}
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                {{> section-inner/product-item}}
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                {{> section-inner/product-item}}
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                {{> section-inner/product-item}}
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                {{> section-inner/product-item}}
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                {{> section-inner/product-item}}
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                {{> section-inner/product-item}}
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                {{> section-inner/product-item}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{> common/footer }}
+
+</body>
+
+</html>

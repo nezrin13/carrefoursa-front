@@ -1,0 +1,779 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="tags for website">
+    <meta name="description" content="front-end starter">
+    <meta name="author" content="Labrin.net">
+    
+      <title> Home - Project Title </title>
+<link href="css/main.css" rel="stylesheet"></head>
+
+<body>
+    <div class="nav-layer"></div>
+    <a id="backTop" title="Back to top" href="#"><i class="fas fa-angle-up"></i></a>
+    <div id="signin-content">
+        <div class="popup">
+            <div class="popup-layer"></div>
+            <div class="popup-content" style="width: 250px;">
+                <div class="popup-head">
+                    <h4>
+                        Giriş Yap
+                    </h4>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="popup-body">
+                    <form>
+                        <label for="">
+                            <span>E-posta</span>
+                            <input type="text">
+                        </label>
+                        <label for="">
+                            <span>Şifre</span>
+                            <input id="password-field" type="password">
+                            <span toggle="#password-field" class="fa fa-fw fa-eye toggle-password"></span>
+                        </label>
+                        <button type="button" class="forgotten-password">
+                            Şifreni unutdunmu?
+                        </button>
+    
+                        <div class="social-button">
+                            <button type="button" class="google">
+                                <img src="../assets/png/google.png" alt=""> <span> Google ile giriş
+                                    yap</span>
+                            </button>
+                            <button type="button" class="facebook">
+                                <img src="../assets/png/facebook.png" alt=""> <span>Facebook ile giriş
+                                    yap</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>      <div class="popup" id="popup-sign">
+            <div class="popup-layer"></div>
+            <div class="popup-content" style="width: 250px;">
+                <div class="popup-head">
+                    <h4>Parola Kurtarma</h4>
+                    <i class="fas fa-times forgotten-password-close"></i>
+                </div>
+                <div class="popup-body">
+                    <form action="">
+                        <p>Lütfen hesabınıza ait e-posta adresini giriniz. Hesabınızı nasıl sıfırlayacağınıza dair
+                            talimatlar bu e-posta adresinize gönderilecektir.</p>
+                        <p> E-Posta Adresi <span>*</span></p>
+                        <input type="text" class="popup-input-text">
+                        <button type="button" class="product-basket">Parola Kurtarma</button>
+                    </form>
+                </div>
+            </div>
+        </div>    <div id="popup-filter">
+        <div class="popup">
+            <div class="popup-layer"></div>
+            <div class="popup-content" style="width: 250px;">
+                <div class="popup-head">
+                    <h4>Sırala</h4>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="popup-body">
+                    <form action="">
+                        <label for="">
+                            <input type="radio" checked="checked" name="sortingRadio" value="relevance">
+                            <p>Akıllı Sıralama</p>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="sortingRadio" value="bestSeller">
+                            <p>Çok Satanlar</p>
+                        </label>
+                        
+                        <label for="">
+                            <input type="radio" name="sortingRadio" value="price-desc">
+                            <p>En Yüksek Fiyat</p>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="sortingRadio" value="price-asc">
+                            <p>En Düşük Fiyat</p>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </div>    <div id="register-content">
+        <div class="popup">
+            <div class="popup-layer"></div>
+            <div class="popup-content" style="width: 250px;">
+                <div class="popup-head">
+                    <h4>
+                        Üye Ol
+                    </h4>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="popup-body">
+                    <form>
+                        <label for="">
+                            <span>E-posta</span>
+                            <input type="text">
+                        </label>
+                        <label for="">
+                            <p><span>Şifre</span>Şifreniz en az 6 karakter uzunluğunda olmalı.</p>
+                            <input id="password-field" type="password">
+                            <span toggle="#password-field" class="fa fa-fw fa-eye toggle-password"></span>
+                        </label>
+                        <label for="" class="label-checkbox">
+                            <input type="checkbox" name="" id="">
+                            <p>Ticari Elektronik İleti iznini vermeyi kabul ediyorum.</p>
+                        </label>
+                        <div class="social-button">
+                            <button type="button" class="google">
+                                <img src="../assets/png/google.png" alt=""> <span> Google ile giriş
+                                    yap</span>
+                            </button>
+                            <button type="button" class="facebook">
+                                <img src="../assets/png/facebook.png" alt=""> <span>Facebook ile giriş
+                                    yap</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    <header>
+        <div class="container ">
+    
+    
+            <div class="header-bottom">
+                <div class="row">
+                    <div class="col-lg-2 ">
+                        <div class="header-logo">
+                            <div class="header-nav-mobile">
+                                <button type="button" class="nav-button-mob">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                    <section class="nav">
+                                            <div class="sidebar">
+                                                <div class="first-menu">
+                                                    <button type="button" class="align-middle sidebar-header"> <i class="fas fa-bars"></i>
+                                                        Kategoriler</button>
+                                
+                                                    <ul class="list-group flex-column  first-menu-toggle">
+                                                        <li class="list-group-item ">
+                                                            <a href="">
+                                                                <img src="../assets/png/food.png" class="nav-icon" alt="">
+                                                                <span class="ml-2 align-middle">Meyve,Sebze</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item ">
+                                                                    <a href="#" class="px-3">Meyve</a>
+                                                                    <a href="#" class="px-3">Sebze</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/meat.png" class="nav-icon" alt="">
+                                                                <span class="ml-2 align-middle">Et,Balık,Kümes</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item ">
+                                                                    <a href="#" class="px-3">Et</a>
+                                                                    <a href="#" class="px-3">Balık</a>
+                                                                    <a href="#" class="px-3">Kümes</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/milk.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Süt, Kahvaltılıklar</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Kahvaltılıklar</a>
+                                                                    <a href="#" class="px-3">Krema ve Kaymak</a>
+                                                                    <a href="#" class="px-3">Peynir</a>
+                                                                    <a href="#" class="px-3">Süt</a>
+                                                                    <a href="#" class="px-3">Yoğurt</a>
+                                                                    <a href="#" class="px-3">Yumurta</a>
+                                                                    <a href="#" class="px-3">Zeytin</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/cake.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Gıda,Şekerleme</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item ">
+                                                                    <a href="#" class="px-3">Salça, Harç ve Bulyon</a>
+                                                                    <a href="#" class="px-3">Dondurulmuş Ürünler</a>
+                                                                    <a href="#" class="px-3">Dondurma</a>
+                                                                    <a href="#" class="px-3">Sıvı yağlar</a>
+                                                                    <a href="#" class="px-3">konserveler</a>
+                                
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/wine.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">İçecekler</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Çay</a>
+                                                                    <a href="#" class="px-3">Kahve</a>
+                                                                    <a href="#" class="px-3">Gazsız İçecekler</a>
+                                                                    <a href="#" class="px-3">Gazlı İçecekler</a>
+                                                                    <a href="#" class="px-3">Maden Suları</a>
+                                
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/boy.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Çocuk Dünyası</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Bebek Bezi</a>
+                                                                    <a href="#" class="px-3">Havlu</a>
+                                                                    <a href="#" class="px-3">Islak Mendil</a>
+                                                                    <a href="#" class="px-3">Beslenme</a>
+                                                                    <a href="#" class="px-3">Eğitim</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/clear.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Temizlik Ürünleri</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/roll.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Kağıt,Kozmetik</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/responsive-design.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Elektronik</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/home.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Ev,Yaşam,Eğlence</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/catalogred.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Katalog ürünleri,Fırsatlar</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <a href="" class="nav-company-button">
+                                                            <i class="fas fa-bullhorn mr-2"></i>
+                                                            Kampanyalar
+                                                        </a>
+                                                    </ul>
+                                            
+                                            </div>
+                                        </div>
+                                    </section>
+                            </div>
+                            <a href="">
+                                <img src="../assets/logo.webp" class="logo my-2" alt="">
+                            </a>
+    
+                            <div class="header-mobile-icon my-2">
+                                <a href=""><i class="fas fa-headset"></i></a>
+                                <a href=""> <i class="far fa-user-circle"></i></a>
+                                <a href="" class="basket-mobile"> <i class="fas fa-shopping-cart"></i>
+                                    <span class="basket-price">0</span></a>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                    <div class="col-lg-4 my-2">
+                        <div class="form-search">
+                            <form>
+                                <input type="text" class="searchbox" placeholder="Məhsulu axtarın...">
+                                <button class="search-button">Ara</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="" class="call-center">
+                            <i class="fas fa-headset"></i>
+                            <p>Sizi Dinliyoruz</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="register-login-button">
+                            <i class="far fa-user-circle"></i>
+                            <button class="register-pop-up-button">
+                                 Üye ol 
+                            </button>
+                            |
+                            <button class="sign-pop-up-button">
+                                 Giriş yap
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="" class="basket">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="basket-price">
+                                0
+                            </span>
+    
+                            <p>Sepetim
+                                <br>
+                                <span>
+                                    0,00TL
+                                </span>
+                            </p>
+                            <i class="fas fa-angle-down ml-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+    <section id="contact-page-section">
+            <div id="nav-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="nav-desk">
+                                    <section class="nav">
+                                            <div class="sidebar">
+                                                <div class="first-menu">
+                                                    <button type="button" class="align-middle sidebar-header"> <i class="fas fa-bars"></i>
+                                                        Kategoriler</button>
+                                
+                                                    <ul class="list-group flex-column  first-menu-toggle">
+                                                        <li class="list-group-item ">
+                                                            <a href="">
+                                                                <img src="../assets/png/food.png" class="nav-icon" alt="">
+                                                                <span class="ml-2 align-middle">Meyve,Sebze</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item ">
+                                                                    <a href="#" class="px-3">Meyve</a>
+                                                                    <a href="#" class="px-3">Sebze</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/meat.png" class="nav-icon" alt="">
+                                                                <span class="ml-2 align-middle">Et,Balık,Kümes</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item ">
+                                                                    <a href="#" class="px-3">Et</a>
+                                                                    <a href="#" class="px-3">Balık</a>
+                                                                    <a href="#" class="px-3">Kümes</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/milk.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Süt, Kahvaltılıklar</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Kahvaltılıklar</a>
+                                                                    <a href="#" class="px-3">Krema ve Kaymak</a>
+                                                                    <a href="#" class="px-3">Peynir</a>
+                                                                    <a href="#" class="px-3">Süt</a>
+                                                                    <a href="#" class="px-3">Yoğurt</a>
+                                                                    <a href="#" class="px-3">Yumurta</a>
+                                                                    <a href="#" class="px-3">Zeytin</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/cake.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Gıda,Şekerleme</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item ">
+                                                                    <a href="#" class="px-3">Salça, Harç ve Bulyon</a>
+                                                                    <a href="#" class="px-3">Dondurulmuş Ürünler</a>
+                                                                    <a href="#" class="px-3">Dondurma</a>
+                                                                    <a href="#" class="px-3">Sıvı yağlar</a>
+                                                                    <a href="#" class="px-3">konserveler</a>
+                                
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/wine.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">İçecekler</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Çay</a>
+                                                                    <a href="#" class="px-3">Kahve</a>
+                                                                    <a href="#" class="px-3">Gazsız İçecekler</a>
+                                                                    <a href="#" class="px-3">Gazlı İçecekler</a>
+                                                                    <a href="#" class="px-3">Maden Suları</a>
+                                
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/boy.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Çocuk Dünyası</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Bebek Bezi</a>
+                                                                    <a href="#" class="px-3">Havlu</a>
+                                                                    <a href="#" class="px-3">Islak Mendil</a>
+                                                                    <a href="#" class="px-3">Beslenme</a>
+                                                                    <a href="#" class="px-3">Eğitim</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/clear.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Temizlik Ürünleri</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/roll.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Kağıt,Kozmetik</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/responsive-design.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Elektronik</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/home.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Ev,Yaşam,Eğlence</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                
+                                                        <li class="list-group-item ">
+                                                            <a href="#">
+                                                                <img src="../assets/png/catalogred.png" class="nav-icon" alt="">
+                                
+                                                                <span class="ml-2 align-middle">Katalog ürünleri,Fırsatlar</span>
+                                                            </a>
+                                                            <ul class="list-group flex-column d-inline-block submenu">
+                                                                <li class="list-group-child-item">
+                                                                    <a href="#" class="px-3">Haşere Öldürücüler</a>
+                                                                    <a href="#" class="px-3">Bulaşık Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Çamaşır Yıkama Ürünleri</a>
+                                                                    <a href="#" class="px-3">Ev Bakımı</a>
+                                                                    <a href="#" class="px-3">Oda Kokusu ve Koku Gidericiler</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <a href="" class="nav-company-button">
+                                                            <i class="fas fa-bullhorn mr-2"></i>
+                                                            Kampanyalar
+                                                        </a>
+                                                    </ul>
+                                            
+                                            </div>
+                                        </div>
+                                    </section>                    </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol>
+                        <li> <a href="">
+                                Ana Sayfa
+                            </a></li>
+                        <li>
+                            <a href="">
+                                / Meyve,Sebze
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-12">
+                    <div class="contact-contect">
+                        <h2>
+                            İletişim
+                        </h2>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p><b>CarrefourSA Carrefour Sabancı Ticaret Merkezi A.Ş</b></p>
+                                <p><b>Genel Müdürlük</b></p>
+                                <p><b>Adres</b> CarrefourSA Plaza</p>
+                                <p>Cevizli Mahallesi, Tugay Yolu Caddesi No: 67 A, Blok: B</p>
+                                <p>Maltepe /İstanbul</p>
+                                <br>
+                                <p><b>Telefon :</b>0216 655 00 00</p>
+                                <p><b>Fax :</b>0 216 655 00 50></p>
+                                <p><b>E-mail :</b><a href="">bilgi@carrefoursa.com</a></p>
+                            </div>
+                            <div class="col-lg-6">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6281158.546297814!2d28.49436197256437!3d39.74609776890233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caca793bb7f88b%3A0xf5b0271e6066a887!2sCarrefourSA!5e0!3m2!1saz!2s!4v1587750224693!5m2!1saz!2s"
+                                    width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-2 col--md-6">
+                            <p class="footer-mail-p">
+                                Kampanyalardan Haberdar Olun:
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <form class="footer-mail">
+                                <input type="text" placeholder="E-Posta adresiniz">
+                                <button type="button">
+                                    Gönder
+                                </button>
+    
+    
+                            </form>
+    
+                        </div>
+                        <div class="col-lg-1 col-md-6">
+                            <p class="footer-mail-p footer-mail-p-mob">Uygulamalar:</p>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="" class="footer-store">
+                                <img src="../assets/png/google-play.svg" alt="">
+                                <img src="../assets/png/app-store.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-customer-service">
+                                Müşteri Hizmetleri:
+                                <span>444 1000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-title">
+                        <h3>
+                            ÜYELİK İŞLEMLERİ
+                        </h3>
+                        <ul>
+                            <li>
+                                <button class="sign-pop-up-button">
+                                    Giriş yap
+                                </button>
+                            </li>
+                            <li>
+                                <button class="register-pop-up-button">
+                                    Üye ol
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-title">
+                        <h3>
+                            MÜŞTERİ HİZMETLERİ
+                        </h3>
+                        <ul>
+                            <li><a href="">Sizi Dinliyoruz</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-title">
+                        <h3>
+                            SİPARİŞ İŞLEMLERİ
+                        </h3>
+                        <ul>
+                            <li><a href="">Fatura Bulucu</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-title">
+                        <h3>
+                            KURUMSAL
+                        </h3>
+                        <ul>
+                            <li><a href="">Kampanyalar</a></li>
+                            <li><a href="">Hakkımızda</a></li>
+                            <li><a href="">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-title">
+                        <h3>
+                            SOSYAL
+                        </h3>
+                        <ul>
+                            <li><a href=""><img src="../assets/png/facebook.png" alt=""> Facebook</a></li>
+                            <li><a href=""><img src="../assets/png/twitter.png" alt=""> Twitter</a></li>
+                            <li><a href=""><img src="../assets/png/instagram.png" alt=""> Instagram</a></li>
+                            <li><a href=""><img src="../assets/png/linkedin.png" alt=""> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript" src="js/main.js"></script></body>
+
+</html>

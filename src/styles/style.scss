@@ -1,0 +1,45 @@
+// @import '~font-awesome/css/font-awesome.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import "vendors/bootstrap";
+@import "molecules/sprite";
+
+@import "~owl.carousel2/dist/assets/owl.carousel.css";
+@import "~owl.carousel2/dist/assets/owl.theme.default.css";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+
+
+// Default
+ 
+@import 'stylescss/default/general';
+@import 'stylescss/default/pop-up';
+
+// Page
+
+@import 'stylescss/page/homepage';
+@import 'stylescss/page/product-category-page';
+@import 'stylescss/page/product-item-page';
+@import 'stylescss/page/about-page';
+@import 'stylescss/page/contact-page';
+@import 'stylescss/page/register';
+@import 'stylescss/page/signin';
+@import 'stylescss/page/campaigns-page';
+@import 'stylescss/page/basket-page';
+@import 'stylescss/page/callus-page';
+@import 'stylescss/page/invoice-page';
+
+// Common 
+
+@import 'stylescss/common/footer';
+@import 'stylescss/common/header';
+
+// Section
+@import 'stylescss/section/nav-section';
+@import 'stylescss/section/product-section';
+@import 'stylescss/section/product';
+@import 'stylescss/section/nav-line';
+
+// Section Inner
+@import 'stylescss/section-inner/product-item';
+@import 'stylescss/section-inner/campaigns-item';
+
+// Mobile
