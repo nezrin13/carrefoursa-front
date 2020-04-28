@@ -1,0 +1,112 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    {{> common/head }}
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+    <a id="backTop" title="Back to top" href="#"><i class="fas fa-angle-up"></i></a>
+    {{> pop-up/signin-popup }}
+    {{> pop-up/forgotten-password-popup }}
+    {{> pop-up/filter-popup }}
+    {{> pop-up/register-popup }}
+    {{> common/header }}
+
+    <section id="orders-page-section">
+        {{> section/nav-line}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol>
+                        <li> <a href="">
+                                Ana Sayfa
+                            </a></li>
+                        <li>
+                            <a href="">
+                                / Hesabım
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-3 col-md-5">
+                    {{> section/account-sidebar}}
+                </div>
+                <div class="col-lg-9 col-md-7">
+                    <div class="orders-content">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="order-text">
+                                    <h3>
+                                        Siparişlerim
+                                    </h3>
+                                    <p>Geçmiş siparişlerinizi buradan görüntüleyebilirsiniz.</p>
+                                    <span>
+                                        * Sipariş Geçmişi Yok
+                                    </span>
+                                    <span>
+                                        * Sipariş Bulunamadı
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orders-select">
+                        <span>
+                            Sipariş Tarihi:
+                        </span>
+                        <div class="selectdiv">
+                            <label>
+                                <select>
+                                    <option>Hepsi</option>
+                                    <option>Ocak </option>
+                                    <option>Şubat</option>
+                                    <option>Mart</option>
+                                    <option>Nisan</option>
+                                    <option>Mayıs</option>
+                                    <option>Haziran</option>
+                                    <option>Temmuz</option>
+                                    <option>Ağustos</option>
+                                    <option>Eylül</option>
+                                    <option>Ekim</option>
+                                    <option>Kasım</option>
+                                    <option>Aralık</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="selectdiv">
+                            <label>
+                                <select>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    {{> common/footer }}
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+#profile-page-section {
+    background-color: #f1f1f1;
+
+    .nav {
+
+        .first-menu-toggle,
+        .nav-company-button {
+            visibility: hidden;
+            opacity: 0;
+            transition: $tr;
+            display: none !important;
+
+            &.nav-active {
+                visibility: visible;
+                opacity: 1;
+                display: block !important;
+            }
+        }
+    }
+
+    .profile-content {
+        padding: 10px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-radius: 3px;
+
+        .profile-icon {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            i {
+                font-size: 40px;
+                color: $blue;
+                margin-top: 10px;
+            }
+        }
+
+        .profile-text {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: 30px;
+                color: $blue;
+
+                @media (max-width: 991.9px) {
+                    font-size: 25px;
+                }
+
+                @media (max-width: 767.9px) {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 767.9px) {
+            padding: 20px;
+        }
+    }
+
+    .profile-about {
+        padding: 10px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        
+        p{
+            font-size: 16px;
+            font-weight: bold;
+
+            span{
+                font-weight: 400;
+                margin-left: 50px;
+            }
+            @media (max-width: 767.9px) {
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+
+            button{
+                width: fit-content;
+                padding: 10px 20px;
+                margin: 20px 20px 0 0;
+                font-size: 14px;
+            }
+            @media (max-width: 991.9px) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                button{
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (max-width: 767.9px) {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+}

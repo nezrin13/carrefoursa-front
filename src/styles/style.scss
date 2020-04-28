@@ -26,6 +26,11 @@
 @import 'stylescss/page/basket-page';
 @import 'stylescss/page/callus-page';
 @import 'stylescss/page/invoice-page';
+@import 'stylescss/page/account-page';
+@import 'stylescss/page/address-page';
+@import 'stylescss/page/change-password-page';
+@import 'stylescss/page/orders-page';
+@import 'stylescss/page/profile-page';
 
 // Common 
 
@@ -37,6 +42,7 @@
 @import 'stylescss/section/product-section';
 @import 'stylescss/section/product';
 @import 'stylescss/section/nav-line';
+@import 'stylescss/section/account-sidebar';
 
 // Section Inner
 @import 'stylescss/section-inner/product-item';

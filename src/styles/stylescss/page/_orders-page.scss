@@ -1,0 +1,138 @@
+#orders-page-section {
+    background-color: #f1f1f1;
+
+    .nav {
+
+        .first-menu-toggle,
+        .nav-company-button {
+            visibility: hidden;
+            opacity: 0;
+            transition: $tr;
+            display: none !important;
+
+            &.nav-active {
+                visibility: visible;
+                opacity: 1;
+                display: block !important;
+            }
+        }
+    }
+
+    .orders-content {
+        padding: 10px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border-radius: 3px;
+
+        .order-icon {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            i {
+                font-size: 40px;
+                color: $blue;
+                margin-top: 10px;
+            }
+        }
+
+        .order-text {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: 30px;
+                color: $blue;
+
+                @media (max-width: 991.9px) {
+                    font-size: 25px;
+                }
+
+                @media (max-width: 767.9px) {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                margin: 0;
+            }
+
+            span {
+                color: red;
+            }
+        }
+
+        @media (max-width: 767.9px) {
+            padding: 20px;
+        }
+    }
+
+    .orders-select {
+        padding: 10px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 3px;
+
+        span {
+            margin: 0 10px;
+        }
+
+        label {
+            margin: 0;
+            width: 100%;
+        }
+
+        .selectdiv {
+            position: relative;
+            width: 200px;
+            margin: 0 10px;
+
+            &:after {
+                content: '\f107';
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 24px;
+                color: $blue;
+                position: absolute;
+                right: 10px;
+                top: 3px;
+                height: 34px;
+                pointer-events: none;
+            }
+
+            &::-ms-expand {
+                display: none;
+            }
+
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                display: block;
+                width: 100%;
+                outline: none;
+                margin: 5px 0px;
+                padding: 0px 10px;
+                font-size: 16px;
+                line-height: 1.75;
+                color: #333;
+                background-color: #ffffff;
+                background-image: none;
+                -ms-word-break: normal;
+                word-break: normal;
+                border: 1px solid #d7d7d7;
+
+            }
+        }
+
+        @media (max-width: 767.9px) {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
