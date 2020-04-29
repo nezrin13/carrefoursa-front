@@ -1,0 +1,79 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    {{> common/head }}
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+    <a id="backTop" title="Back to top" href="#"><i class="fas fa-angle-up"></i></a>
+    {{> pop-up/signin-popup }}
+    {{> pop-up/forgotten-password-popup }}
+    {{> pop-up/filter-popup }}
+    {{> pop-up/register-popup }}
+    {{> common/header }}
+
+    <section id="address-page-section">
+        {{> section/nav-line}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol>
+                        <li> <a href="">
+                                Ana Sayfa
+                            </a></li>
+                        <li>
+                            <a href="">
+                                / Hesabım
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-3 col-md-5">
+                    {{> section/account-sidebar}}
+                </div>
+                <div class="col-lg-9 col-md-7">
+                    <div class="address-content">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="address-icon">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="address-text">
+                                    <h3>
+                                        Adreslerim
+                                    </h3>
+                                    <p>Kayıtlı adreslerinizi görebilir, silebilir veya yenisini buradan
+                                        ekleyebilirsiniz.</p>
+                                    <span>* Kayıtlı bir adresiniz bulunmamaktadır.</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d-flex align-items-center">
+                                <button type="button" class="button-blue">
+                                    Yeni Adres oluşdur
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    {{> common/footer }}
+
+</body>
+
+</html>

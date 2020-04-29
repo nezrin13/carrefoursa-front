@@ -177,7 +177,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 // button
 
-.product-basket {
+.button-blue {
     width: 100%;
     padding: 10px 0;
     margin-top: 10px;
@@ -261,4 +261,47 @@ input[type=number]::-webkit-outer-spin-button {
         min-width: 290px;
     }
 
+}
+
+.selectdiv {
+    position: relative;
+    width: 200px;
+    margin: 0 10px;
+
+    &:after {
+        content: '\f107';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 24px;
+        color: $blue;
+        position: absolute;
+        right: 10px;
+        top: 3px;
+        height: 34px;
+        pointer-events: none;
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: block;
+        width: 100%;
+        outline: none;
+        margin: 5px 0px;
+        padding: 0px 10px;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #333;
+        background-color: #ffffff;
+        background-image: none;
+        -ms-word-break: normal;
+        word-break: normal;
+        border: 1px solid #d7d7d7;
+
+    }
 }
