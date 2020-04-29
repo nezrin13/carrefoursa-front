@@ -1,0 +1,47 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    {{> common/head }}
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+
+    <section id="address-selection-page-section">
+        {{> section/address-selection-header}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="address-select-header">
+                        <h3>
+                            Adres Seçimi
+                        </h3>
+                        <p>Teslimat Bölgeniz: Bayırkozağacı Mh., Alanya, Antalya</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            {{> section-inner/address-item}}
+                        </div>
+                        <div class="col-lg-6">
+                            {{> section-inner/address-item}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    {{> section-inner/order-extract-item }}
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

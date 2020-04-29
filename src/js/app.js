@@ -314,4 +314,8 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.xs-menu').toggleClass('active');
     });
+
+      $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+      });
 });

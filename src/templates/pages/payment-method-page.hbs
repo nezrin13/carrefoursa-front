@@ -1,0 +1,68 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    {{> common/head }}
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+
+    <section id="payment-method-page-section">
+        {{> section/address-selection-header}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="payment-method-header">
+                        <h3>
+                            Ödeme Şekli
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="payment-method-content">
+                        <h4>
+                            Garanti Pay
+                        </h4>
+                        <div class="payment-method-info">
+                            <div class="payment-title">
+                                <img src="/src/static/assets/png/garanti_pay_logo.webp" alt="">
+                                <p>
+                                    ile Ödeme
+                                </p>
+                            </div>
+                            <div class="payment-method-text">
+                                <ul>
+                                    <li>
+                                        "Siparişi Tamamla" butonuna tıklayın. Ödeme için "Garanti Pay ile Öde" sayfasına
+                                        yönlendirileceksiniz.
+                                    </li>
+                                    <li>
+                                        Açılan sayfada kimlik numaranız (TCKN) ya da telefon bilginiz ile hesabınıza
+                                        giriş yapabilirsiniz.
+                                    </li>
+                                    <li>
+                                        Son adımda cihazınızdaki uygulama üzerinden dilediğiniz kartı seçerek ödemenizi
+                                        kolayca gerçekleştirebilirsiniz. Ödeme işlemi sonrasında otomatik olarak web
+                                        sitemize yönleniyor olacaksınız.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    {{> section-inner/order-extract-item }}
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -2,6 +2,23 @@
     // padding: 20px;
     width: 100%;
 
+    .nav-tabs {
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+        padding: 0 20px;
+
+        a {
+            color: #999;
+            font-weight: 600;
+            border: none;
+
+            &.active {
+                background-color: #f1f1f1;
+            }
+        }
+    }
+
     .address-head {
         display: flex;
         align-items: center;
@@ -24,17 +41,19 @@
     .address-body {
         form {
             background-color: #f1f1f1;
-            // padding: 20px;
             display: flex;
             justify-content: center;
             width: 100%;
 
             .address {
                 display: flex;
-                // flex-wrap: wrap;
                 flex-direction: column;
                 width: 100%;
 
+                &:first-child{
+                    padding-top: 20px;
+
+                }
                 label {
                     display: flex;
                     align-items: flex-start;

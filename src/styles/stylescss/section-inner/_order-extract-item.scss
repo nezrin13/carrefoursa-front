@@ -1,0 +1,61 @@
+.order-extract {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+
+    .order-extract-header {
+        padding: 20px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h4 {
+            font-size: 24px;
+            color: $blue;
+
+            @media(max-width: 767.9px){
+                font-size: 18px;
+            }
+        }
+
+        a {
+            font-size: 12px;
+            cursor: pointer;
+        }
+    }
+
+    .order-extract-body {
+        padding: 10px;
+        padding: 20px 15px;
+        box-shadow: 1px 0 7px 0 rgba(186, 186, 186, 0.5);
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #999;
+
+            span {
+                color: $blue;
+            }
+
+            &:first-child {
+                color: #666;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            &.discount{
+                color: $green;
+                font-weight: 600;
+                font-size: 12px;
+
+                span{
+                    color: $green;
+                }
+            }
+        }
+    }
+}

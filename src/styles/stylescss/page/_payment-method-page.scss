@@ -1,0 +1,89 @@
+#payment-method-page-section {
+    background-color: #f1f1f1;
+    padding: 0 0 20px;
+
+    .payment-method-header {
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 0;
+
+        h3 {
+            font-size: 22px;
+            color: #666666;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        
+        @media (max-width: 767.9px) {
+            h3 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .payment-method-content{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        h4{
+            color: $blue;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .payment-method-info{
+            display: flex;
+            flex-direction: column;
+
+            .payment-title{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 155px;
+                    height: 44px;
+                    object-fit: contain;
+                    margin-right: 20px;
+                }
+                p{
+                    margin: 0;
+                    font-size: 30px;
+                    color: #666;
+
+                    @media (max-width: 991.9px) {
+                        font-size: 25px;
+                    }
+                    @media (max-width: 767.9px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .payment-method-text{
+            padding: 30px 0;
+            ul{
+                padding-left: 30px;
+                li{
+                    list-style-type: disc;
+                    font-size: 14px;
+                    color: #999;
+                    margin-bottom: 10px;
+                }
+
+                @media (max-width: 767.9px){
+                    ul{
+                        padding-left:10px;
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (min-width: 991.9px) {
+        height: 100%;
+    }
+}

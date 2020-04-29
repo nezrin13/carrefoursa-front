@@ -1,0 +1,37 @@
+#address-selection-page-section {
+    background-color: #f1f1f1;
+    padding: 10px 0 20px;
+    .address-select-header {
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 0;
+
+        h3 {
+            font-size: 22px;
+            color: #666666;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: $blue;
+        }
+        @media (max-width: 767.9px){
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+
+           h3{
+               margin-bottom: 10px;
+           }
+        }
+    }
+
+   
+    @media (min-width: 991.9px){
+        height: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+#address-delivery-page-section {
+    background-color: #f1f1f1;
+    padding: 0 0 20px;
+
+    .address-delivery-header {
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 0;
+
+        h3 {
+            font-size: 22px;
+            color: #666666;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: $blue;
+        }
+        @media (max-width: 767.9px){
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+
+           h3{
+               margin-bottom: 10px;
+           }
+        }
+    }
+    .address-delivery-content{
+        color: #000;
+        padding: 20px 20px 30px;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        p{
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    @media (min-width: 991.9px){
+        height: 100%;
+    }
+}

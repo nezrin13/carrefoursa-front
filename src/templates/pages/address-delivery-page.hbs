@@ -1,0 +1,44 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    {{> common/head }}
+</head>
+
+<body>
+    <div class="nav-layer"></div>
+
+    <section id="address-delivery-page-section">
+        {{> section/address-selection-header}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="address-delivery-header">
+                        <h3>
+                            Teslimat Zamanı
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                   <div class="address-delivery-content">
+                       <p>
+                           Siparişiniz maksimum 3 iş günü içerisinde kargoya verilecektir. Devam Et ile ilerleyebilirsiniz.
+                       </p>
+                   </div>
+                </div>
+                <div class="col-lg-4">
+                  {{> section-inner/order-extract-item }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -14,96 +14,274 @@
     <div class="nav-layer"></div>
 
     <section id="new-address-popup">
-            <div class="address-head">
-                <h4>
-                    Yeni Adres Oluştur
-                </h4>
-                <button>
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="address-body">
-                <form action="">
-                    <div class="address">
-                        <label for="">
-                            <span>Adres Tipi (Örn: Ev, İş) <b>*</b></span>
-                            <input type="text">
-                        </label>
-                        <label for="">
-                            <span>İsim <b>*</b></span>
-                            <input type="text">
-                        </label>
-                        <label for="">
-                            <span>Soyisim <b>*</b></span>
-                            <input type="text">
-                        </label>
-                        <label for="">
-                            <span>TC Kimlik No </span>
-                            <input type="text">
-                        </label>
-                        <div class="selectdiv">
-                            <label>
+        <div class="address-head">
+            <h4>
+                Yeni Adres Oluştur
+            </h4>
+            <button>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="address-body">
+
+            {{!-- <div id="home" class="tab-pane fade in active">
+                    <form action="">
+                        <div class="address">
+                            <label for="">
+                                <span>Adres Tipi (Örn: Ev, İş) <b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>İsim <b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Soyisim <b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>TC Kimlik No </span>
+                                <input type="text">
+                            </label>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>Şehir <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
+                                        <option>Mart</option>
+
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>İlçe <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
+
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>Mahalle <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <label for="">
                                 <span>Şehir <b>*</b></span>
-                                <select>
-                                    <option>Hepsi</option>
-                                    <option>Ocak </option>
-                                    <option>Şubat</option>
-                                    <option>Mart</option>
+                                <textarea name="address"
+                                    placeholder="Adresinize ek olarak tarif bilgisi yazmanız, adresinizin bulunmasını kolaylaştıracaktır."></textarea>
+                            </label>
+                            <label for="">
+                                <span>E-Posta <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Telefon Numarası <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Cep Telefon Numarası <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <button type="button" class="button-blue">Bu Adresi Kaydet</button>
+                            </label>
+                            <label for="">
+                                <p><b>*</b>İşaretli alanların doldurulması zorunludur.</p>
+                                <p>Lütfen girdiğiniz adres bilgisinin doğru olduğudan emin olunuz. Siparişinizin en kısa
+                                    zamanda size ulaştırılabilmesi için anlaşılabilir olmasına dikkat ediniz.</p>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+             --}}
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                        aria-controls="nav-home" aria-selected="true">Bireysel</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                        aria-controls="nav-profile" aria-selected="false">Kurumsal</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <form action="">
+                        <div class="address">
+                            <label for="">
+                                <span>Adres Tipi (Örn: Ev, İş) <b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>İsim <b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Soyisim <b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>TC Kimlik No </span>
+                                <input type="text">
+                            </label>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>Şehir <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
+                                        <option>Mart</option>
 
-                                </select>
-                            </label>
-                        </div>
-                        <div class="selectdiv">
-                            <label>
-                                <span>İlçe <b>*</b></span>
-                                <select>
-                                    <option>Hepsi</option>
-                                    <option>Ocak </option>
-                                    <option>Şubat</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>İlçe <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
 
-                                </select>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>Mahalle <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <label for="">
+                                <span>Şehir <b>*</b></span>
+                                <textarea name="address"
+                                    placeholder="Adresinize ek olarak tarif bilgisi yazmanız, adresinizin bulunmasını kolaylaştıracaktır."></textarea>
+                            </label>
+                            <label for="">
+                                <span>E-Posta <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Telefon Numarası <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Cep Telefon Numarası <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <button type="button" class="button-blue">Bu Adresi Kaydet</button>
+                            </label>
+                            <label for="">
+                                <p><b>*</b>İşaretli alanların doldurulması zorunludur.</p>
+                                <p>Lütfen girdiğiniz adres bilgisinin doğru olduğudan emin olunuz. Siparişinizin en kısa
+                                    zamanda size ulaştırılabilmesi için anlaşılabilir olmasına dikkat ediniz.</p>
                             </label>
                         </div>
-                        <div class="selectdiv">
-                            <label>
-                                <span>Mahalle <b>*</b></span>
-                                <select>
-                                    <option>Hepsi</option>
-                                    <option>Ocak </option>
-                                    <option>Şubat</option>
-                                </select>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <form action="">
+                        <div class="address">
+                            <label for="">
+                                <span>Adres Tipi (Örn: Ev, İş) <b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Şirket İsmi<b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Vergi Kimlik No <b>*</b></span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Vergi Dairesi</span>
+                                <input type="text">
+                            </label>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>Şehir <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
+                                        <option>Mart</option>
+
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>İlçe <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
+
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="selectdiv">
+                                <label>
+                                    <span>Mahalle <b>*</b></span>
+                                    <select>
+                                        <option>Hepsi</option>
+                                        <option>Ocak </option>
+                                        <option>Şubat</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <label for="">
+                                <span>Şehir <b>*</b></span>
+                                <textarea name="address"
+                                    placeholder="Adresinize ek olarak tarif bilgisi yazmanız, adresinizin bulunmasını kolaylaştıracaktır."></textarea>
+                            </label>
+                            <label for="">
+                                <span>E-Posta <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Telefon Numarası <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>Cep Telefon Numarası <b>*</b> </span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <button type="button" class="button-blue">Bu Adresi Kaydet</button>
+                            </label>
+                            <label for="">
+                                <p><b>*</b>İşaretli alanların doldurulması zorunludur.</p>
+                                <p>Lütfen girdiğiniz adres bilgisinin doğru olduğudan emin olunuz. Siparişinizin en kısa
+                                    zamanda size ulaştırılabilmesi için anlaşılabilir olmasına dikkat ediniz.</p>
                             </label>
                         </div>
-                    </div>
-                    <div class="address">
-                        <label for="">
-                            <span>Şehir <b>*</b></span>
-                            <textarea name="address"
-                                placeholder="Adresinize ek olarak tarif bilgisi yazmanız, adresinizin bulunmasını kolaylaştıracaktır."></textarea>
-                        </label>
-                        <label for="">
-                            <span>E-Posta <b>*</b> </span>
-                            <input type="text">
-                        </label>
-                        <label for="">
-                            <span>Telefon Numarası <b>*</b> </span>
-                            <input type="text">
-                        </label>
-                        <label for="">
-                            <span>Cep Telefon Numarası <b>*</b> </span>
-                            <input type="text">
-                        </label>
-                        <label for="">
-                            <button type="button" class="button-blue">Bu Adresi Kaydet</button>
-                        </label>
-                        <label for="">
-                            <p><b>*</b>İşaretli alanların doldurulması zorunludur.</p>
-                            <p>Lütfen girdiğiniz adres bilgisinin doğru olduğudan emin olunuz. Siparişinizin en kısa
-                                zamanda size ulaştırılabilmesi için anlaşılabilir olmasına dikkat ediniz.</p>
-                        </label>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
+        </div>
     </section>
 
 </body>

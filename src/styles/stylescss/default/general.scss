@@ -9,6 +9,7 @@ $opblue:#01488b9f;
 $green:#009F0F;
 $gray:#82a4c0;
 $lgblue2:#3373B5;
+$lgblue3: #69a6e2;
 ////
 $tr : .4s;
 
@@ -192,6 +193,41 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: $drblue;
     }
 }
+
+.button-white{
+    width: 100%;    
+    background-color: #fff;
+    color: $blue;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    outline: none !important;
+    transition: $tr;
+
+    &:hover{
+        color: #fff;
+        background-color: $blue;
+    }
+}
+.button-green{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: $green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none !important;
+    transition: $tr;
+    border: 1px solid #fff;
+
+
+    &:hover{
+        color: $green;
+        background-color: #fff;
+        border: 1px solid $green;
+    }
+}
+
 
 .google {
     width: 100%;
